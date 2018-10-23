@@ -122,7 +122,7 @@ class UsersController extends APIController
      */
     public function deleteAll(Request $request)
     {
-        $ids = $request->get('ids');
+        $ids = $request->get('notes');
 
         if (isset($ids) && !empty($ids)) {
             $result = $this->repository->deleteAll($ids);

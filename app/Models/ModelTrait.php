@@ -31,4 +31,5 @@ trait ModelTrait
                 </a>';
         }
     }
+
 }

@@ -48,6 +48,16 @@ return [
             'deleted' => 'deleted Blog',
             'updated' => 'updated Blog',
         ],
+        'notes' => [
+            'created' => 'created Note',
+            'deleted' => 'deleted Note',
+            'updated' => 'updated Note',
+        ],
+        'notecategories' => [
+            'created' => 'created Note Category',
+            'deleted' => 'deleted Note Category',
+            'updated' => 'updated Note Category',
+        ],
         'emailtemplates' => [
             'deleted' => 'deleted Email Template',
             'updated' => 'updated Email Template',

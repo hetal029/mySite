@@ -17,6 +17,7 @@ class BlogEventListener
      */
     public function onCreated($event)
     {
+
         history()->withType($this->history_slug)
             ->withEntity($event->blogs->id)
             ->withText('trans("history.backend.blogs.created") <strong>'.$event->blogs->name.'</strong>')

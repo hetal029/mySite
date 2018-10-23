@@ -639,6 +639,108 @@ class PermissionTableSeeder extends Seeder
         $viewBackend->deleted_at = null;
         $viewBackend->save();
 
+          /**
+         * Notes Management.
+         */
+        $permission_model = config('access.permission');
+        $viewBackend = new $permission_model();
+        $viewBackend->name = 'view-note';
+        $viewBackend->display_name = 'View Notes Management';
+        $viewBackend->sort = 48;
+        $viewBackend->created_by = 1;
+        $viewBackend->updated_by = null;
+        $viewBackend->created_at = Carbon::now();
+        $viewBackend->updated_at = Carbon::now();
+        $viewBackend->deleted_at = null;
+        $viewBackend->save();
+
+        $permission_model = config('access.permission');
+        $viewBackend = new $permission_model();
+        $viewBackend->name = 'create-note';
+        $viewBackend->display_name = 'Create Note';
+        $viewBackend->sort = 49;
+        $viewBackend->created_by = 1;
+        $viewBackend->updated_by = null;
+        $viewBackend->created_at = Carbon::now();
+        $viewBackend->updated_at = Carbon::now();
+        $viewBackend->deleted_at = null;
+        $viewBackend->save();
+
+        $permission_model = config('access.permission');
+        $viewBackend = new $permission_model();
+        $viewBackend->name = 'edit-note';
+        $viewBackend->display_name = 'Edit Note';
+        $viewBackend->sort = 50;
+        $viewBackend->created_by = 1;
+        $viewBackend->updated_by = null;
+        $viewBackend->created_at = Carbon::now();
+        $viewBackend->updated_at = Carbon::now();
+        $viewBackend->deleted_at = null;
+        $viewBackend->save();
+
+        $permission_model = config('access.permission');
+        $viewBackend = new $permission_model();
+        $viewBackend->name = 'delete-note';
+        $viewBackend->display_name = 'Delete Note';
+        $viewBackend->sort = 51;
+        $viewBackend->created_by = 1;
+        $viewBackend->updated_by = null;
+        $viewBackend->created_at = Carbon::now();
+        $viewBackend->updated_at = Carbon::now();
+        $viewBackend->deleted_at = null;
+        $viewBackend->save();
+
+        /**
+         * Note Categories Management.
+         */
+        $permission_model = config('access.permission');
+        $viewBackend = new $permission_model();
+        $viewBackend->name = 'view-note-category';
+        $viewBackend->display_name = 'View Note Categories Management';
+        $viewBackend->sort = 52;
+        $viewBackend->created_by = 1;
+        $viewBackend->updated_by = null;
+        $viewBackend->created_at = Carbon::now();
+        $viewBackend->updated_at = Carbon::now();
+        $viewBackend->deleted_at = null;
+        $viewBackend->save();
+
+        $permission_model = config('access.permission');
+        $viewBackend = new $permission_model();
+        $viewBackend->name = 'create-note-category';
+        $viewBackend->display_name = 'Create Note Category';
+        $viewBackend->sort = 53;
+        $viewBackend->created_by = 1;
+        $viewBackend->updated_by = null;
+        $viewBackend->created_at = Carbon::now();
+        $viewBackend->updated_at = Carbon::now();
+        $viewBackend->deleted_at = null;
+        $viewBackend->save();
+
+        $permission_model = config('access.permission');
+        $viewBackend = new $permission_model();
+        $viewBackend->name = 'edit-note-category';
+        $viewBackend->display_name = 'Edit Note Category';
+        $viewBackend->sort = 54;
+        $viewBackend->created_by = 1;
+        $viewBackend->updated_by = null;
+        $viewBackend->created_at = Carbon::now();
+        $viewBackend->updated_at = Carbon::now();
+        $viewBackend->deleted_at = null;
+        $viewBackend->save();
+
+        $permission_model = config('access.permission');
+        $viewBackend = new $permission_model();
+        $viewBackend->name = 'delete-note-category';
+        $viewBackend->display_name = 'Delete Note Category';
+        $viewBackend->sort = 55;
+        $viewBackend->created_by = 1;
+        $viewBackend->updated_by = null;
+        $viewBackend->created_at = Carbon::now();
+        $viewBackend->updated_at = Carbon::now();
+        $viewBackend->deleted_at = null;
+        $viewBackend->save();
+
         $this->enableForeignKeys();
     }
 }

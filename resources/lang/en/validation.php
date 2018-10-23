@@ -180,6 +180,11 @@ return [
                 'is_active' => 'Active',
             ],
 
+            'notecategories' => [
+                'title'     => 'Note Category',
+                'is_active' => 'Active',
+            ],
+
             'blogtags' => [
                 'title'     => 'Blog Tag',
                 'is_active' => 'Active',
@@ -197,6 +202,16 @@ return [
                 'cannonical_link'  => 'Cannonical Link',
                 'meta_keyword'     => 'Meta Keyword',
                 'meta_description' => 'Meta Description',
+                'status'           => 'Status',
+            ],
+
+              'notes' => [
+                'title'            => 'Note Title',
+                'category'         => 'Note Category',
+                'publish'          => 'Publich Date & Time',
+                'image'            => 'Featured Image',
+                'content'          => 'Content',
+                'slug'             => 'Slug',
                 'status'           => 'Status',
             ],
 

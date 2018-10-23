@@ -46,6 +46,9 @@ class EventServiceProvider extends ServiceProvider
         \App\Listeners\Backend\BlogCategories\BlogCategoryEventListener::class,
         \App\Listeners\Backend\BlogTags\BlogTagEventListener::class,
         \App\Listeners\Backend\Blogs\BlogEventListener::class,
+        \App\Listeners\Backend\Notes\NoteEventListener::class,
+        \App\Listeners\Backend\NoteCategories\NoteCategoryEventListener::class,
+
     ];
 
     /**

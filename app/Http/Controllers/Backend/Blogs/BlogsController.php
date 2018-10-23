@@ -54,7 +54,7 @@ class BlogsController extends Controller
     }
 
     /**
-     * @param \App\Http\Requests\Backend\Blogs\ManageBlogsRequest $request
+    * @param \App\Http\Requests\Backend\Blogs\ManageBlogsRequest $request
      *
      * @return mixed
      */

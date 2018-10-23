@@ -94,6 +94,13 @@ class ModulesTableSeeder extends Seeder
                 'created_at'            => Carbon::now(),
             ],
             [
+                'name'                  => trans('menus.backend.notecategories.management'),
+                'url'                   => 'admin.notecategories.index',
+                'view_permission_id'    => 'view-note-category',
+                'created_by'            => 1,
+                'created_at'            => Carbon::now(),
+            ],
+            [
                 'name'                  => trans('menus.backend.blogtags.management'),
                 'url'                   => 'admin.blogtags.index',
                 'view_permission_id'    => 'view-blog-tag',
@@ -111,6 +118,13 @@ class ModulesTableSeeder extends Seeder
                 'name'                  => trans('menus.backend.faqs.management'),
                 'url'                   => 'admin.faqs.index',
                 'view_permission_id'    => 'view-faq',
+                'created_by'            => 1,
+                'created_at'            => Carbon::now(),
+            ],
+             [
+                'name'                  => trans('menus.backend.note.management'),
+                'url'                   => 'admin.note.index',
+                'view_permission_id'    => 'view-note',
                 'created_by'            => 1,
                 'created_at'            => Carbon::now(),
             ],

@@ -32,6 +32,9 @@ class PermissionRoleSeeder extends Seeder
             37, 38, 39, 40, // Blog Tag
             41, 42, 43, 44, // Blogs
             45, 46, 47, 48, // FAQ
+            49, 50, 51, 52, // Notes
+            53, 54, 55, 56, // Note Category
+            57,58,59,
         ];
         Role::find(2)->permissions()->sync($executivePermission);
 
